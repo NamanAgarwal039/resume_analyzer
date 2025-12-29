@@ -7,9 +7,7 @@ from pypdf import PdfReader
 # 1. Load environment variables (for local use)
 load_dotenv()
 
-# 2. Securely configure the API Key
-# If running on Streamlit Cloud, use st.secrets.
-# If running locally, use .env file.
+
 if "GOOGLE_API_KEY" in st.secrets:
     api_key = st.secrets["GOOGLE_API_KEY"]
 else:
@@ -17,7 +15,7 @@ else:
 
 genai.configure(api_key=api_key)
 
-# 3. SMART FUNCTION: Find the first working model
+
 def get_working_model():
     try:
         model_list = genai.list_models()
