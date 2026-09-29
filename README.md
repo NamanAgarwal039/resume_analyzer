@@ -6,13 +6,9 @@ An interactive Streamlit web application that analyzes PDF resumes against job d
 
 .
 ├── app.py                # Main Streamlit application file
-
 ├── requirements.txt      # Required Python packages
-
 ├── .env                  # Environment variables file (local API key)
-
 └── README.md             # Project documentation
-
 
 🚀 Features
 
